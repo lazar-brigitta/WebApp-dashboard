@@ -1,15 +1,15 @@
-const alert = document.getElementById('alert');
+const alert1 = document.getElementById('alert');
 
 // Alert pop-up
-alert.innerHTML =
+alert1.innerHTML =
   `<div class='alert-banner'>
       <p><strong>Alert:</strong> You have unread messages</p>
       <span class="alert-banner-close">x</span>
    </div>`
 
-alert.addEventListener('click', (e) => {
+alert1.addEventListener('click', (e) => {
     if (e.target.className === "alert-banner-close") {
-        alert.style.display = 'none';
+        alert1.style.display = 'none';
     }
   }
 )
