@@ -173,8 +173,8 @@ nav path,
     fill: white;
 }
 
-.bell-icon path {
-    transition: 1s transform ease-in;
+.bell-icon svg {
+    transition: .3s transform ease-in;
 }
 
 .bell-icon svg:hover {

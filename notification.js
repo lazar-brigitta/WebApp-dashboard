@@ -4,12 +4,14 @@ const secondNotification = document.getElementsByClassName('notification2')[0];
 const thirdNotification = document.getElementsByClassName('notification3')[0];
 const x1 = document.getElementById('x1');
 const x2 = document.getElementById('x2');
+const badge = document.getElementById('badge');
 
 bellIcon.addEventListener('click', (e) => {
     firstNotification.style.display = 'flex';
     x1.style.alignSelf = 'center';
     secondNotification.style.display = 'flex';
     secondNotification.style.justifyContent = 'space-between';
+    badge.style.visibility = 'hidden';
 });
 
 x1.addEventListener('click', (e) => {
@@ -20,4 +22,5 @@ x1.addEventListener('click', (e) => {
 x2.addEventListener('click', (e) => {
     secondNotification.style.visibility = "hidden";   
 });
+
 
